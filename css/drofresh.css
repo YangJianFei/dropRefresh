@@ -1,0 +1,90 @@
+
+/*加载中样式*/
+.scroll_load {
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+.loadDone {
+  color: gray;
+}
+.loadIng {
+  color: #5cb85c;
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.icon-loadding {
+  display: inline-block;
+  -webkit-animation: loading 2s infinite linear;
+  animation: loading 2s infinite linear;
+}
+.project-closed:after {
+  content: '已关闭';
+  position: absolute;
+  bottom: 1.3em;
+  left: 0.8em;
+  z-index: 10;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
+}
+.down_refresh {
+  height: 35px;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  vertical-align: middle /* align-items: center; */ /* display: flex; */ /* justify-content: center; */;
+}
+.down_refresh .iconfont {
+  font-size: 30px;
+  vertical-align: middle;
+}
+.down_refresh .iconloaddingweui {
+  height: 17px;
+  display: inline-block;
+  position: relative;
+}
+.down_refresh .weui_loading {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  top: 11px;
+  left: -14px;
+}
+.down_refresh .weui_loading_leaf:before {
+  background: gray;
+}
+.down_refresh_hide {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-transition: all 0ms ease-out !important;
+  transition: all 0ms ease-out !important;
+}
